@@ -6,39 +6,49 @@ body {
 
 main {
     background-color: #FFCB47;
-    padding: 10px 10px;
+    padding: 2px 25%;
 }
 
 .common_header {
-    background-color: #051A37;
-    width: 100%;
-    box-sizing: content-box;
+    margin-left: 1em;
 }
 
-/*.main_header {*/
-/*    background-color: #00A9A5;*/
-/*    width: 100%;*/
-/*}*/
-
-/*section {*/
-/*    background-color: #00A9A5;*/
-/*    color: #4E8098;*/
-/*}*/
-
-footer, footer a, footer p {
-    background-color: #051A37;
-    color: #FFF4E4;
-    margin-bottom: 0;
+pre {
     text-align: center;
 }
 
-.topnav {
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 2em;
+}
+
+ul {
+    margin: 0 auto;
+    display: table;
+    list-style-type: none;
+}
+
+.header_nav {
     background-color: #4E8098;
     overflow: hidden;
     display: table;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.topnav a {
+.main_nav {
+    background-color: #4E8098;
+    overflow: hidden;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.header_nav a, .main_nav a{
     float: left;
     color: #FFF4E4;
     text-align: center;
@@ -47,32 +57,21 @@ footer, footer a, footer p {
     font-size: 17px;
 }
 
-.topnav a:hover {
+.header_nav a:hover, .main_nav a:hover {
     background-color: #8AA1B1;
     color: black;
 }
 
-.topnav a.active {
+.header_nav a.active {
     background-color: #00A9A5;
     color: white;
 }
 
-blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-}
-
-blockquote p {
-    margin-top: 0;
-}
-
 pre code {
-    width: 50%;
     background-color: #2b2b2b;
     border: 1px solid #545454;
     border-radius: 5px;
+    text-align: left;
     display: block;
     padding: 20px;
     box-shadow: 1px 2px 5px 0 #2b2b2b;
@@ -98,6 +97,34 @@ pre code {
     color: #618752;
 }
 
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote p {
+    margin-top: 0;
+}
+
 dd {
     margin-bottom: 1em;
+}
+
+dl {
+    margin-left: 10px;
+}
+
+footer, footer a, footer p {
+    background-color: #051A37;
+    color: #FFF4E4;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.github_repo_img {
+    height: 32px;
+    width: 32px;
+    margin-top: 20px;
 }
