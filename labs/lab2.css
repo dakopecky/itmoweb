@@ -1,0 +1,103 @@
+body {
+    background-color: #051A37;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+main {
+    background-color: #FFCB47;
+    padding: 10px 10px;
+}
+
+.common_header {
+    background-color: #051A37;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+/*.main_header {*/
+/*    background-color: #00A9A5;*/
+/*    width: 100%;*/
+/*}*/
+
+/*section {*/
+/*    background-color: #00A9A5;*/
+/*    color: #4E8098;*/
+/*}*/
+
+footer, footer a, footer p {
+    background-color: #051A37;
+    color: #FFF4E4;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.topnav {
+    background-color: #4E8098;
+    overflow: hidden;
+    display: table;
+}
+
+.topnav a {
+    float: left;
+    color: #FFF4E4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #8AA1B1;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #00A9A5;
+    color: white;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote p {
+    margin-top: 0;
+}
+
+pre code {
+    width: 50%;
+    background-color: #2b2b2b;
+    border: 1px solid #545454;
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+    box-shadow: 1px 2px 5px 0 #2b2b2b;
+}
+
+.go_keywords {
+    color: #cd712c;
+}
+
+.go_package_name {
+    color: #9fb46e;
+}
+
+.go_func_name {
+    color: #e0a951;
+}
+
+.go_symbol {
+    color: #9aa9bc;
+}
+
+.go_text {
+    color: #618752;
+}
+
+dd {
+    margin-bottom: 1em;
+}

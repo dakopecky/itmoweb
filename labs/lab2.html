@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="резюме, портфолио, резюме-портфолио, лабораторная работа, итмо">
-    <meta name="description" content="Лабораторная работа №2 - цель работы создание сайта резюме-портфолио">
+    <meta name="description" content="Лабораторная работа №2 - научиться создавать и привязывать стили для элементов
+     html">
     <title>Копецкий Данил | M33051</title>
+    <link href="./lab2.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <p><a href="/itmoweb">ITMO web</a></p>
-    <nav>
+<header class="common_header">
+    <a href="/itmoweb"><img src="/itmoweb/images/logo.svg" title="ITMO web"></a>
+    <nav class="topnav">
         <a href="/itmoweb/labs/lab1.html">Лаб 1</a>
-        <a href="/itmoweb/labs/lab2.html">Лаб 2</a>
+        <a class="active" href="/itmoweb/labs/lab2.html">Лаб 2</a>
     </nav>
 </header>
 <main>
-    <header>
+    <header class="main_header">
         <h1>Лабораторная работа №2</h1>
-        <nav>
+        <nav class="topnav">
             <a href="#about-me">О себе</a>
             <a href="#pros-and-cons">Успехи и антиуспехи</a>
             <a href="#ascii-art">Тотемное Животное</a>
@@ -31,17 +33,17 @@
             Обучаюсь с <strong><time datetime="2019-07-29">29.07.2019.</time></strong><br>
             В данный момент выполняю/сдаю лабораторную работу №1 по дисцеплине "Web-программирование".</p>
         <h3 id="pros-and-cons">Успехи и антиуспехи</h3>
-        <ul>
-            <li>Успехи
-                <ol>
-                    <li>Учеба в ИТМО</li>
-                </ol>
+        <ul role="list">
+            <li data-icon="➕">Успехи
+                <ul>
+                    <li data-icon="🎓">Учеба в ИТМО</li>
+                </ul>
             </li>
-            <li>Антиуспехи
-                <ol>
-                    <li><del>Учеба в ИТМО</del></li>
-                    <li>Образ жизни</li>
-                </ol>
+            <li data-icon="➖">Антиуспехи
+                <ul>
+                    <li data-icon="🎓"><del>Учеба в ИТМО</del></li>
+                    <li data-icon="🏡">Образ жизни</li>
+                </ul>
             </li>
         </ul>
         <article>
@@ -102,15 +104,13 @@
         </article>
         <article>
             <h3 id="go-code">Код</h3>
-            <pre><code>
-package main
+            <pre><code><span class="go_symbol"><span class="go_keywords">package</span> <span class="go_package_name">main</span>
 
-import "fmt"
+<span class="go_keywords">import</span> <span class="go_text">"fmt"</span>
 
-func main() {
-    fmt.Println("Hello World")
-}
-                </code></pre>
+<span class="go_keywords">func</span> <span class="go_func_name">main</span>() {
+    <span class="go_package_name">fmt</span>.<span class="go_func_name">Println</span>(<span class="go_text">"Hello World"</span>)
+}</span></code></pre>
         </article>
     </section>
     <aside>
