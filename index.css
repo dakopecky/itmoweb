@@ -14,8 +14,11 @@ main {
 }
 
 section {
-    padding-top: 20%;
+    padding: calc((100vh - 135px)/2 - 60px) 0;
     text-align: center;
+    display: table;
+    margin: auto ;
+    box-sizing: content-box;
 }
 
 ul {
