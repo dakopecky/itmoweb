@@ -89,6 +89,7 @@ ul {
 }
 
 .ascii {
+    font-family: "PT Mono", sans-serif;
     overflow: scroll;
     line-height: 1em;
 }
