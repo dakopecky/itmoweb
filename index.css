@@ -1,6 +1,13 @@
 body {
     background-color: #051A37;
     margin: 0;
+    font-family: "TT Norms Pro","Arial",sans-serif;
+    font-size: 15px;
+    color: #051937;
+}
+
+h1, h2, h3, h4 {
+    font-size: 20px;
 }
 
 header {

@@ -2,7 +2,10 @@ body {
     background-color: #051A37;
     margin-left: 0;
     margin-right: 0;
-    font-family: "Times New Roman" , sans-serif;
+    font-family: "TT Norms Pro","Arial",sans-serif;
+    font-size: 15px;
+    color: #051937;
+    line-height: normal;
 }
 
 main {
@@ -14,16 +17,29 @@ main {
     margin-left: 1em;
 }
 
-pre {
-    text-align: center;
-}
-
 h1 {
+    font-size: 30px;
+    font-weight: lighter;
     text-align: center;
 }
 
 h3 {
+    font-size: 18px;
+    font-weight: bold;
     margin-top: 2em;
+}
+
+.about_me_info {
+    text-align: center;
+}
+
+.about_me_info div {
+    display: inline-block;
+    text-align: left;
+}
+
+pre {
+    text-align: center;
 }
 
 ul {
@@ -49,12 +65,16 @@ ul {
     justify-content: center;
 }
 
-.header_nav a, .main_nav a{
+.header_nav a, .main_nav a {
     float: left;
     color: #FFF4E4;
     text-align: center;
     padding: 8px 10px;
     text-decoration: none;
+    font-size: 13px;
+}
+
+.main_nav a {
     font-size: 17px;
 }
 
@@ -70,6 +90,7 @@ ul {
 
 .ascii {
     overflow: scroll;
+    line-height: 1em;
 }
 
 pre code {
