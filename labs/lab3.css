@@ -150,6 +150,10 @@ footer, footer a, footer p {
     text-align: center;
 }
 
+aside {
+    margin-bottom: 3em;
+}
+
 .github_repo_img {
     height: 32px;
     width: 32px;
