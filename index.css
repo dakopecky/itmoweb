@@ -14,7 +14,7 @@ main {
 }
 
 section {
-    padding: calc((100vh - 135px - 100px)/2) 0;
+    padding: calc((100vh - 135px)/2 - 60px) 0;
     text-align: center;
     display: table;
     margin: auto ;
