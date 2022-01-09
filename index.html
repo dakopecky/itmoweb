@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <title>ITMO web</title>
+    <title>Todo List</title>
     <meta charset="UTF-8">
-    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <a href="/itmoweb"><img src="/itmoweb/images/logo.svg" title="ITMO web" alt="ITMO web"></a>
-    </header>
-    <main>
-        <section>
-            <h1>Список лабораторных работ</h1>
-            <ul>
-                <li><a href="labs/lab1">Лабораторная работа №1</a></li>
-                <li><a href="labs/lab2">Лабораторная работа №2</a></li>
-                <li><a href="labs/lab3">Лабораторная работа №3</a></li>
-                <li><a href="labs/lab4">Лабораторная работа №4</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <a href="https://github.com/dakopecky/itmoweb">
-            <img class="github_repo_img" src="/itmoweb/images/Octicons-mark-github.svg" title="GitHub Repo" alt="GitHub Repo">
-        </a>
-        <p>ИТМО <time datetime="2021-00-00">2021</time></p>
-    </footer>
+    <div class="main">
+        <div class="todo-input">
+            <h1>Todo List</h1>
+            <form id="todo-input-form" onsubmit="add_task(); return false;">
+                <input id="input-task" name="input_name" placeholder="Type ...">
+            </form>
+        </div>
+        <div class="todo-filter">
+            <span id="cnt"></span>
+            <div>
+                <button class="selected" onclick="show_all()" id="all">All</button>
+                <button class="not-selected" onclick="show_active()" id="active">Active</button>
+                <button class="not-selected" onclick="show_completed()" id="completed">Completed</button>
+            </div>
+            <button class="inactive_clear" onclick="clear_tasks()" id="clear">Clear Completed</button>
+        </div>
+        <div class="todo-tasks">
+            <form id="todo-task-form" name="tasks">
+                <ul id="task-list"></ul>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

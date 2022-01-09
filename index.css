@@ -1,51 +1,144 @@
 body {
-    background-color: #051A37;
-    margin: 0;
-    font-family: "TT Norms Pro","Arial",sans-serif;
-    font-size: 15px;
-    color: #051937;
+    background-color: #26232c;
+    color: white;
+    font-family: "Helvetica", serif;
 }
 
-h1, h2, h3, h4 {
-    font-size: 20px;
+h1 {
+    color: #73c578;
 }
 
-header {
-    margin-left: 1em;
-    height: 45px;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main {
-    background-color: #FFCB47;
-    min-height: calc(100vh - 135px);
-}
-
-section {
-    padding: calc((100vh - 135px)/2 - 60px) 0;
+.todo-input input {
+    padding: 0;
+    background-color: #322f39;
+    width: 100%;
+    height: 3em ;
+    border: 0;
     text-align: center;
-    display: table;
-    margin: auto ;
-    box-sizing: content-box;
+    box-shadow: 2px 2px black;
+    color: white;
+    outline: none;
+}
+
+.todo-tasks {
+    padding: 0;
+    max-height: 30rem;
+    width: 30rem;
+    box-shadow: 2px 2px black;
+    overflow: scroll;
+}
+
+.todo-tasks input {
+    margin-right: 1em;
+
+}
+
+.main span {
+    color: black;
+    font-size: 0.8em;
+    margin-left: 1em;
+    width: 6em;
+}
+
+.todo-input {
+    width: 30rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding: 0;
-    list-style-position: inside;
-    list-style-type: none;
 }
 
-footer {
-    color: #FFF4E4;
+li {
+    padding: 1em;
+}
+
+li:nth-child(odd) {
+    background-color: #322f39;
+}
+
+input:checked + label {
+    color: #a8a8a8;
+    text-decoration: line-through;
+}
+
+input:checked + label:before {
+    content: '\2713';
+    color: #73c578;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label:before {
+    content: " ";
+    display: inline-block;
+    font: 1em "Calibri";
+    margin-right: 15px;
+    position: relative;
     text-align: center;
-    bottom: 0;
-    height: 90px;
-    width: 100%;
+    text-indent: 0;
+    width: 1.2em;
+    height: 1.2em;
+    border: 1px solid #e3e3e3;
+    border-image: initial;
+    vertical-align: middle;
+    border-radius: 1.2em;
+    background-color: #515153;
 }
 
-footer img {
-    padding: 0;
-    margin-top: 15px;
-    height: 32px;
-    width: 32px;
+.todo-filter {
+    display: none;
+    justify-content: space-between;
+    border: 0;
+    padding: 1em 0;
+    background-color: #e7e7e7;
+    align-items: center;
+    align-content: center;
+    width: 30rem;
+    box-shadow: 2px 2px black;
+    margin: 0;
+    height: 2em;
 }
+
+button {
+    border: 1px #75727d solid;
+    border-radius: 2em;
+}
+
+.not-selected {
+    background-color: white;
+    color: #75727d;
+}
+
+.selected {
+    background-color: #75727d;
+    color: white;
+}
+
+.active_clear {
+    visibility: visible;
+    background-color: #ec444c;
+    color: white;
+    margin-right: 1em;
+    width: 7.5em;
+    border: 0;
+}
+
+.inactive_clear {
+    visibility: hidden;
+    margin-right: 1em;
+    width: 7.5em;
+}
+
