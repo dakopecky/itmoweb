@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo List</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lab5.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="">Lab #5<br>Todo List</a></li>
+            <li><a class="menu__item" href="lab6">Lab #6</a></li>
+            <li><a class="menu__item" href="#">Lab #7</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="todo-input">
+            <h1>Todo List</h1>
+            <form id="todo-input-form" onsubmit="add_task(); return false;">
+                <input id="input-task" name="input_name" placeholder="Type ...">
+            </form>
+        </div>
+        <div class="todo-filter">
+            <span id="cnt"></span>
+            <div>
+                <button class="selected" onclick="show_all()" id="all">All</button>
+                <button class="not-selected" onclick="show_active()" id="active">Active</button>
+                <button class="not-selected" onclick="show_completed()" id="completed">Completed</button>
+            </div>
+            <button class="inactive_clear" onclick="clear_tasks()" id="clear">Clear Completed</button>
+        </div>
+        <div class="todo-tasks">
+            <form id="todo-task-form" name="tasks">
+                <ul id="task-list"></ul>
+            </form>
+        </div>
+    </div>
+    <script src="lab5.js"></script>
+</body>
+</html>

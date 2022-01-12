@@ -53,35 +53,35 @@ h1 {
     margin: 0;
 }
 
-ul {
+.main ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+.main li {
     padding: 1em;
 }
 
-li:nth-child(odd) {
+.main li:nth-child(odd) {
     background-color: #322f39;
 }
 
-input:checked + label {
+.main input:checked + label {
     color: #a8a8a8;
     text-decoration: line-through;
 }
 
-input:checked + label:before {
+.main input:checked + label:before {
     content: '\2713';
     color: #73c578;
 }
 
-input[type="checkbox"] {
+.main input[type="checkbox"] {
     display: none;
 }
 
-label:before {
+.main label:before {
     content: " ";
     display: inline-block;
     font: 1em "Calibri";
@@ -141,4 +141,3 @@ button {
     margin-right: 1em;
     width: 7.5em;
 }
-
