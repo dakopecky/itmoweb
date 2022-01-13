@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Pic Loader</title>
+    <link rel="stylesheet" href="lab6.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <h1>Lab #6</h1>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="lab5">Lab #5<br>Todo List</a></li>
+            <li><a class="menu__item" href="">Lab #6<br>Pic Loader</a></li>
+            <li><a class="menu__item" href="#">Lab #7</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <h1>Pic Loader</h1>
+        <div class="main__gallery"></div>
+        <div class="main__loader">
+            <img style="width: 56px; height: 56px;" src="../images/loader.gif"/>
+        </div>
+        <button class="main__more">Get more!</button>
+        <b style="font-size:3vh" class="load_error">&#9888;Error!</b>
+    </div>
+    <script src="lab6.js"></script>
 </body>
 </html>
