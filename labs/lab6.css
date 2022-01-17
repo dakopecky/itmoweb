@@ -19,8 +19,13 @@ h1 {
     max-height: 600px;
     overflow: scroll;
     border-radius: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
+.main__gallery::-webkit-scrollbar {
+    display: none;
+}
 .main__loader {
     display: none;
 }
