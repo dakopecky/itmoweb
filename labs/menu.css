@@ -72,6 +72,7 @@
     width: 1.5em;
     height: 1.5em;
 }
+
 .menu__item:hover {
     background-color: #CFD8DC;
 }
