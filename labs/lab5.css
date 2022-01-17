@@ -18,7 +18,7 @@ h1 {
     padding: 0;
     background-color: #322f39;
     width: 100%;
-    height: 3em ;
+    height: 3em;
     border: 0;
     text-align: center;
     box-shadow: 2px 2px black;
@@ -32,11 +32,16 @@ h1 {
     width: 30rem;
     box-shadow: 2px 2px black;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.todo-tasks::-webkit-scrollbar {
+    display: none;
 }
 
 .todo-tasks input {
     margin-right: 1em;
-
 }
 
 .main span {
