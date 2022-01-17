@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab #7</title>
+    <link rel="stylesheet" href="lab7.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="lab5">Lab #5<br>Todo List</a></li>
+            <li><a class="menu__item" href="lab6">Lab #6<br>Pic Loader</a></li>
+            <li><a class="menu__item" href="lab7">Lab #7<br>Pic Swiper</a></li>
+        </ul>
+    </div>
+    <div class="swiper mySwiper b-page__line-header_d_swiper">
+        <h1 id="gallery" class = "b-page_section_header">Pic Swiper</h1>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="../images/go_memes/1.jpg" alt="Golang Gopher Unicorn Sticker" class="img__team_itemm">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/go_memes/2.jpg" alt="Golang Gopher Go Six Pack Sticker" class="img__team_itemm">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/go_memes/3.jpg" alt="Golang Gopher Go Panic Sticker" class="img__team_item">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/go_memes/4.jpg" alt="Golang Gopher Go Defer Sticker" class="img__team_item">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/go_memes/5.jpg" alt="Golang Keanu Reeves with Dog Sticker" class="img__team_item">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/go_memes/6.jpg" alt="The Golang Mascot: Ballet Sticker" class="img__team_itemm">
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination" id = "swiper-pagination_g"></div>
+
+        <div class="swiper-button-prev " id = "button_color_g_prev"></div>
+        <div class="swiper-button-next " id = "button_color_g_next"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="lab7.js"></script>
+</body>
+</html>

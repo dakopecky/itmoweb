@@ -1,0 +1,59 @@
+body {
+    background-color: #26232c;
+    color: white;
+    font-family: "Helvetica", serif;
+}
+
+h1 {
+    color: #73c578;
+    text-align: center;
+}
+
+.b-page__line-header_d_swiper{
+    margin: 5% 0;
+    /*background-color: #55697A;*/
+}
+
+.swiper {
+    position: static;
+    width: 50%;
+    height: 50%;
+
+
+}
+
+.swiper-slide {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+#button_color_g_prev{
+    color: #3C60A2;
+}
+
+#button_color_g_next{
+    color: #3C60A2;
+}
+
+#swiper-pagination_g{
+    color: #3C60A2;
+}
+/*root{--swiper-theme-color:none}
