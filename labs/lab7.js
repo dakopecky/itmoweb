@@ -16,7 +16,7 @@ window.addEventListener('load', () =>  {
 
         autoplay: { // задаем автоповорот
             delay: 3000,
-            //  disableOnInteraction: false,
+            disableOnInteraction: false,
         },
         pagination: {
             el: ".swiper-pagination", //шкала в низу, для нее определяем класс
